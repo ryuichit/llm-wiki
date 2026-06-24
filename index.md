@@ -8,9 +8,9 @@ This is a personal knowledge base maintained collaboratively between human curat
 
 ## Statistics
 
-- Total pages: 121 (6 sources + 60 entities + 35 concepts + 11 comparisons + 9 supporting)
-- Total sources: 6
-- Last ingest: 2026-06-24 (Beyond BeautifulSoup Paper)
+- Total pages: 132 (8 sources + 66 entities + 40 concepts + 12 comparisons + 6 supporting)
+- Total sources: 8
+- Last ingest: 2026-06-24 (WebAgents Survey Paper)
 - Last lint: 2026-06-24 (Comprehensive lint pass - 195→60 broken links)
 
 ## Sources
@@ -24,6 +24,10 @@ Summary pages for ingested documents.
 - [[web-agent-rl-constraints-paper|Web Agent Agentic RL Decision Model Under Multi-Cost and Failure Risk Constraints]] - Constrained reinforcement learning framework unifying multi-dimensional costs (requests, latency, failures) with CVaR-based tail risk control for practical web agent deployment
 - [[robots-txt-gatekeeping-paper|Is Misinformation More Open? A Study of robots.txt Gatekeeping on the Web]] - First longitudinal study of robots.txt gatekeeping differences between reputable and misinformation websites, revealing stark asymmetry in AI crawler blocking (WWW '26)
 - [[beyond-beautifulsoup-paper|Beyond BeautifulSoup: Benchmarking LLM-Powered Web Scraping for Everyday Users]] - Systematic evaluation of scraping democratization measuring what non-expert users can accomplish with off-the-shelf LLM tools across 35 websites spanning five security tiers (arXiv 2026)
+- [[autocrawler-paper|AUTOCRAWLER: A Progressive Understanding Web Agent for Web Crawler Generation]] - Two-stage framework using progressive understanding (top-down + step-back operations) for automatic crawler generation on vertical information pages (arXiv 2024)
+
+### Survey Papers
+- [[webagents-survey-paper|A Survey of WebAgents: Towards Next-Generation AI Agents for Web Automation with Large Foundation Models]] - First comprehensive survey systematically reviewing 45+ WebAgent systems across architectures (perception, planning & reasoning, execution), training strategies (training-free, GUI comprehension, task-specific fine-tuning, post-training RL), and trustworthiness (safety, privacy, generalizability) - arXiv May 2025
 
 ## Entities
 
@@ -51,6 +55,9 @@ People, organizations, technologies, and other named entities.
 - [[arth-bhardwaj|Arth Bhardwaj]] - First author of Beyond BeautifulSoup research
 - [[nirav-diwan|Nirav Diwan]] - Co-author of Beyond BeautifulSoup research
 - [[gang-wang|Gang Wang]] - Co-author of Beyond BeautifulSoup research
+- [[wenhao-huang|Wenhao Huang]] - Co-first author of AUTOCRAWLER research
+- [[liangbo-ning|Liangbo Ning]] - Lead author of WebAgents survey
+- [[wenqi-fan|Wenqi Fan]] - Corresponding author of WebAgents survey
 
 ### Organizations
 - [[nanyang-technological-university|Nanyang Technological University]] - Lead research institution (WebCloak)
@@ -60,7 +67,7 @@ People, organizations, technologies, and other named entities.
 - [[amazon|Amazon]] - Industry collaborator (AutoData)
 - [[ibm-research|IBM Research]] - Research collaborator (AutoData)
 - [[tongyi-lab|Tongyi Lab]] - Alibaba Group research lab (WebDancer)
-- [[alibaba-group|Alibaba Group]] - Parent organization of Tongyi Lab
+- [[alibaba-group|Alibaba Group]] - Parent organization of Tongyi Lab and AUTOCRAWLER collaborator
 - [[university-of-massachusetts-boston|University of Massachusetts Boston]] - Lead institution (Web Agent RL Constraints)
 - [[university-of-massachusetts-amherst|University of Massachusetts Amherst]] - Collaborating institution (Web Agent RL Constraints)
 - [[cornell-university|Cornell University]] - Collaborating institution (Web Agent RL Constraints)
@@ -71,6 +78,7 @@ People, organizations, technologies, and other named entities.
 - [[max-planck-institute-informatics|Max Planck Institute for Informatics]] - Lead institution (robots.txt gatekeeping)
 - [[saint-francis-high-school|Saint Francis High School]] - Affiliated institution (Beyond BeautifulSoup)
 - [[university-of-illinois-urbana-champaign|University of Illinois Urbana-Champaign]] - Research institution (Beyond BeautifulSoup)
+- [[fudan-university|Fudan University]] - Lead research institution (AUTOCRAWLER)
 - [[media-bias-fact-check|Media Bias/Fact Check]] - Content credibility classification organization
 - [[internet-archive|Internet Archive]] - Web archive for longitudinal analysis
 
@@ -89,6 +97,7 @@ People, organizations, technologies, and other named entities.
 - [[scrapy|Scrapy]] - Comprehensive Python web scraping framework (82% success on simple HTML)
 - [[claude-computer-use|Claude]] - Anthropic's tool-enabled LLM agent (100% simple HTML, 20-12% auth)
 - [[simular-ai|Simular.ai]] - Visual web agent with real browser (100% HTML, 63-70% auth)
+- [[autocrawler|AUTOCRAWLER]] - Progressive understanding crawler generation framework (71.56% correct with GPT-4)
 
 ## Concepts
 
@@ -157,7 +166,7 @@ Ideas, techniques, theories, and abstract concepts.
 - [[long-cot|Long Chain-of-Thought]] - Extended reasoning for reasoning models (QwQ-Plus style)
 - [[reasoning-models-vs-instruction-models|Reasoning Models vs Instruction Models]] - Different model types and their optimal uses
 
-### LLM-Driven Web Scraping
+### LLM-Driven Web Scraping & Automation
 - [[llm-driven-web-agents|LLM-Driven Web Agents]] - Overview of LLM-powered web scraping
 - [[llm-to-script|LLM-to-Script (L2S)]] - Code generation paradigm for scraping
 - [[llm-native-crawlers|LLM-Native Crawlers (LNC)]] - Integrated LLM crawling systems
@@ -166,6 +175,13 @@ Ideas, techniques, theories, and abstract concepts.
 - [[llm-assisted-scripting|LLM-Assisted Scripting (LAS)]] - User executes LLM-generated code workflow
 - [[end-to-end-llm-agents|End-to-End LLM Agents (ELA)]] - Autonomous agent planning and execution workflow
 - [[scraping-democratization|Scraping Democratization]] - Lowering of technical barriers through LLM tools
+- [[progressive-understanding|Progressive Understanding]] - Hierarchical comprehension mechanism for HTML using top-down and step-back operations
+- [[crawler-generation|Crawler Generation]] - Automatic creation of reusable extraction rules using LLMs instead of manual programming
+
+### WebAgent Architectures & Training (Survey Framework)
+- [[three-process-webagent-architecture|Three-Process WebAgent Architecture]] - Fundamental design pattern: Perception → Planning & Reasoning → Execution
+- [[webagent-training-strategies|WebAgent Training Strategies]] - Four progressive paradigms: training-free, GUI comprehension, task-specific fine-tuning, post-training RL
+- [[trustworthy-webagents|Trustworthy WebAgents]] - Five dimensions: safety & robustness, privacy, generalizability, fairness, explainability
 
 ### Evaluation & Benchmarking
 - [[llmcrawlbench|LLMCrawlBench]] - Benchmark dataset with 237 pages, 10,895 images from 50 websites
@@ -192,6 +208,7 @@ Comparative analyses between related items.
 - [[las-vs-ela|LLM-Assisted Scripting vs End-to-End LLM Agents]] - Code generation vs autonomous execution workflows
 - [[beyond-beautifulsoup-vs-autodata|Beyond BeautifulSoup vs AutoData]] - Democratization assessment vs optimal system capability
 - [[beyond-beautifulsoup-vs-webcloak|Beyond BeautifulSoup vs WebCloak]] - Attacker capability measurement vs defender effectiveness
+- [[comparison-autocrawler-autodata-webdancer|AUTOCRAWLER vs AutoData vs WebDancer]] - Crawler generation vs multi-agent vs information seeking: three paradigms for web automation
 
 ---
 

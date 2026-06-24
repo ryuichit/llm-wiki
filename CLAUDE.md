@@ -110,6 +110,25 @@ Brief description of what was done
 - **Version everything**: This is a git repo - commit after major operations
 - **Ask before big changes**: Confirm before restructuring or major lints
 
+## Critical File Path Rules
+
+**ALWAYS use full paths with `wiki/` prefix when creating pages:**
+
+✅ **CORRECT**:
+- `wiki/concepts/my-concept.md`
+- `wiki/entities/my-entity.md`
+- `wiki/comparisons/comparison-a-vs-b.md`
+- `wiki/sources/paper-summary.md`
+
+❌ **WRONG** (creates files at project root):
+- `./concepts/my-concept.md`
+- `concepts/my-concept.md`
+- `comparisons/my-comparison.md`
+
+**When delegating to agents**: Explicitly specify full paths with `wiki/` prefix in prompts. Example: "Create concept page at `wiki/concepts/new-concept.md`"
+
+**When verifying**: After agent operations, check that no directories were created at project root (`.git`, `sources/`, `wiki/`, `index.md`, `log.md`, `CLAUDE.md` are the ONLY allowed root-level items)
+
 ## Your Role
 
 You don't get bored with maintenance tasks. I curate sources and ask questions. You handle all the bookkeeping, cross-referencing, updating, and synthesis work that makes the wiki valuable.
