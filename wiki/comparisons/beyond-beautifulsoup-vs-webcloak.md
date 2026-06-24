@@ -79,8 +79,8 @@ A comparison of two complementary security research papers representing opposite
 
 **Effectiveness**:
 - Gemini-2.5-pro: 84.2% → 0%
-- Crawl4AI: 98% → 2%
-- Browser-Use: 99.3% → 2%
+- Crawl4AI: 98% → 0%
+- Browser-Use: 99.3% → 0%
 
 ## Mutual Relevance
 

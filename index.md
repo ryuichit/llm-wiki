@@ -8,10 +8,10 @@ This is a personal knowledge base maintained collaboratively between human curat
 
 ## Statistics
 
-- Total pages: 115+
+- Total pages: 121 (6 sources + 60 entities + 35 concepts + 11 comparisons + 9 supporting)
 - Total sources: 6
 - Last ingest: 2026-06-24 (Beyond BeautifulSoup Paper)
-- Last lint: None
+- Last lint: 2026-06-24 (Comprehensive lint pass - 195→60 broken links)
 
 ## Sources
 
@@ -120,6 +120,16 @@ Ideas, techniques, theories, and abstract concepts.
 - [[multi-agent-web-data-collection|Multi-Agent Systems for Web Data Collection]] - Coordinated agent collaboration for data collection
 - [[ohcache|OHCache]] - Oriented Hypergraph Cache System for efficient coordination
 - [[react-paradigm|ReAct Paradigm]] - Reasoning + Acting execution model for LLM agents
+
+#### AutoData Agent Roles
+- [[plan-agent|Plan Agent (PLN)]] - Task decomposition and information gap analysis
+- [[web-agent|Web Agent (WEB)]] - Web page navigation and content extraction
+- [[tool-agent|Tool Agent (TOL)]] - Search engine query formulation and execution
+- [[blueprint-agent|Blueprint Agent (BLU)]] - API endpoint discovery and documentation
+- [[engineering-agent|Engineering Agent (ENG)]] - Code generation for scrapers and parsers
+- [[test-agent|Test Agent (TST)]] - Test case generation and validation
+- [[validation-agent|Validation Agent (VAL)]] - Data quality assessment and verification
+- [[manager-agent|Manager Agent (MGR)]] - Workflow coordination and decision-making
 
 ### Reinforcement Learning & Training
 - [[agentic-rl|Agentic Reinforcement Learning]] - RL techniques for training autonomous agents
